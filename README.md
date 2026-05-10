@@ -208,9 +208,13 @@ python -m medconnect_classifier.cli fallback \
 
 ## Notes
 
-- This is a learning and portfolio project — not a production medical system.
-- All patient messages are synthetic and contain no real PII.
-- Do not send real patient data, medical records, or personal health information to external LLM APIs.
+> ⚠️ **This is not a medical diagnosis tool.** It is a support-ticket classification demo showing how LLMs can help route synthetic patient-support messages to the right operational queue.
+
+> 📋 **This project uses only synthetic patient-support messages.** It does not use real patient data, PHI, medical records, or production healthcare data. All names, insurance providers, and scenarios are fictional and created for demonstration purposes only.
+
+- Do not send real patient data, medical records, personal health information, or real insurance details to external LLM APIs.
+- All sample messages use fictional names (e.g. Dr. Maya Patel) and generic references (e.g. "insurance provider") — not real individuals or companies.
+- The emergency scenario recommended action advises contacting real emergency services — the AI does not replace emergency care.
 - Model names and SDK APIs evolve — keep model names configurable via `.env`.
 
 ---

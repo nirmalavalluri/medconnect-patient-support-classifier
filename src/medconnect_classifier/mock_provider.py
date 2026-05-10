@@ -14,22 +14,27 @@ from .schemas import PatientIntent
 # ---------------------------------------------------------------------------
 
 SAMPLE_MESSAGES = [
-    "I have been trying to reschedule my cardiology appointment with Dr. Sarah Mitchell "
+    # Synthetic demo message — no real patient data
+    "I have been trying to reschedule my cardiology appointment with Dr. Maya Patel "
     "for two weeks. My original appointment was March 15th and nobody has called me back. "
     "I have a follow-up stress test that cannot be delayed any further.",
 
-    "I was charged $450 for a routine consultation that my BlueCross BlueShield insurance "
+    # Synthetic demo message — no real patient data
+    "I was charged $450 for a routine consultation that my insurance provider "
     "should have fully covered. This is the third billing error in six months and I am "
     "extremely frustrated. I need this resolved before my next visit.",
 
+    # Synthetic demo message — no real patient data
     "My doctor prescribed Metformin 500mg last Tuesday but the pharmacy says the "
     "prescription is not on file. I am diabetic and have been without my medication "
     "for three days now. Please help urgently.",
 
+    # Synthetic demo message — no real patient data
     "I am experiencing severe chest pain and shortness of breath and I cannot get "
     "through to your emergency line. Please connect me to someone immediately. "
     "This is very serious.",
 
+    # Synthetic demo message — no real patient data
     "Could you let me know what documents I need to bring for my MRI scan scheduled "
     "for next Friday? This is my first time having this procedure and I want to "
     "make sure I am fully prepared.",
@@ -42,8 +47,8 @@ MOCK_RESPONSES = [
         urgency="high",
         sentiment="concerned",
         department="cardiology",
-        entities=["Dr. Sarah Mitchell", "March 15th", "stress test", "two weeks"],
-        summary="Patient cannot reschedule a delayed cardiology follow-up appointment with Dr. Sarah Mitchell.",
+        entities=["Dr. Maya Patel", "March 15th", "stress test", "two weeks"],
+        summary="Patient cannot reschedule a delayed cardiology follow-up appointment with Dr. Maya Patel.",
         recommended_action="Escalate to cardiology scheduling team immediately; prioritize callback within 2 hours given pending stress test.",
     ),
     PatientIntent(
@@ -51,8 +56,8 @@ MOCK_RESPONSES = [
         urgency="medium",
         sentiment="distressed",
         department="billing",
-        entities=["$450", "BlueCross BlueShield", "routine consultation", "third billing error"],
-        summary="Patient disputes a $450 charge that their BlueCross BlueShield insurance should have covered.",
+        entities=["$450", "insurance provider", "routine consultation", "third billing error"],
+        summary="Patient disputes a $450 charge that their insurance provider should have covered.",
         recommended_action="Assign to billing dispute team; review insurance claims history for this patient; contact within 24 hours.",
     ),
     PatientIntent(
@@ -71,7 +76,7 @@ MOCK_RESPONSES = [
         department="emergency",
         entities=["chest pain", "shortness of breath", "emergency line"],
         summary="Patient is experiencing chest pain and shortness of breath and cannot reach the emergency line.",
-        recommended_action="Immediately connect to on-call emergency physician; follow critical escalation protocol.",
+        recommended_action="Advise the patient to call emergency services immediately or go to the nearest emergency department; escalate internally as critical.",
     ),
     PatientIntent(
         category="general_inquiry",

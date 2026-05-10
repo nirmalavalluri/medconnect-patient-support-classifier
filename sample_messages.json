@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "message": "I have been trying to reschedule my cardiology appointment with Dr. Maya Patel for two weeks. My original appointment was March 15th and nobody has called me back. I have a follow-up stress test that cannot be delayed any further.",
+    "note": "Synthetic demo message — no real patient data",
+    "expected_category": "appointment",
+    "expected_urgency": "high"
+  },
+  {
+    "id": 2,
+    "message": "I was charged $450 for a routine consultation that my insurance provider should have fully covered. This is the third billing error in six months and I am extremely frustrated. I need this resolved before my next visit.",
+    "note": "Synthetic demo message — no real patient data",
+    "expected_category": "billing",
+    "expected_urgency": "medium"
+  },
+  {
+    "id": 3,
+    "message": "My doctor prescribed Metformin 500mg last Tuesday but the pharmacy says the prescription is not on file. I am diabetic and have been without my medication for three days now. Please help urgently.",
+    "note": "Synthetic demo message — no real patient data",
+    "expected_category": "prescription",
+    "expected_urgency": "critical"
+  },
+  {
+    "id": 4,
+    "message": "I am experiencing severe chest pain and shortness of breath and I cannot get through to your emergency line. Please connect me to someone immediately. This is very serious.",
+    "note": "Synthetic demo message — no real patient data",
+    "expected_category": "emergency",
+    "expected_urgency": "critical"
+  },
+  {
+    "id": 5,
+    "message": "Could you let me know what documents I need to bring for my MRI scan scheduled for next Friday? This is my first time having this procedure and I want to make sure I am fully prepared.",
+    "note": "Synthetic demo message — no real patient data",
+    "expected_category": "general_inquiry",
+    "expected_urgency": "low"
+  }
+]
