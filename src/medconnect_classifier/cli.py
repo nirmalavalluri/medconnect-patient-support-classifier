@@ -81,7 +81,7 @@ def cmd_fallback(args) -> None:
 
 
 def cmd_demo(_args) -> None:
-    print("\n🏥 MedConnect Demo — 5 Original Patient Messages\n")
+    print("\n🏥 MedConnect Demo — 5 Synthetic Patient Support Messages\n")
     for i, message in enumerate(SAMPLE_MESSAGES, 1):
         print(f"\n[Message {i}] {message[:90]}...")
         output = classify_mock(message)
