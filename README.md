@@ -1,5 +1,7 @@
 # MedConnect Patient Support Classifier
 
+![Project banner](docs/screenshots/project-banner.png)
+
 A portfolio GenAI project that classifies patient support messages using multiple LLM providers — built by a .NET developer learning Agentic AI.
 
 Compares **OpenAI**, **Anthropic Claude**, and **Google Gemini** on the same healthcare scenario using Pydantic structured outputs, latency tracking, and a production-style provider fallback pattern.
@@ -80,7 +82,19 @@ Patient Message
 ```
 
 ---
+## Demo Output
 
+The CLI demo runs in mock mode without API keys and classifies synthetic patient-support messages by intent, urgency, sentiment, department, extracted entities, and recommended support action.
+
+> Note: This project uses only synthetic demo messages. It does not use real patient data, PHI, medical records, or production healthcare data.
+
+### CLI Demo Results - Part 1
+
+![CLI demo results part 1](docs/screenshots/cli-demo-results-1.png)
+
+### CLI Demo Results - Part 2
+
+![CLI demo results part 2](docs/screenshots/cli-demo-results-2.png)
 ## Project Structure
 
 ```
